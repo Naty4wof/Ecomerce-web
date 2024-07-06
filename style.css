@@ -1,0 +1,251 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background: linear-gradient(100deg,#3004f7,#123cf5,#3b06b8);
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    border: 1px solid white;
+    padding-bottom: 200px;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    background: #2605bb;
+    z-index: 100;
+}
+header p{
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
+header ul li{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+}
+header ul li:hover{
+    transform: translateY(-3px);
+}
+header a{
+    text-decoration: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+header ul a:hover{
+    color: rgb(12, 235, 12);
+}
+header ul i{
+    display: none;
+}
+.sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont{
+    margin-top: 200px;
+    padding: 0px 20px;
+}
+
+.cont h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.ima{
+    margin-top: 200px;
+}
+.ima img{
+    width: 250px;
+    height: 300px;
+    border-radius: 300px;
+}
+#about{
+    width: 100%;
+    border: 1px solid white;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#about div{
+    display: inline-block;
+    padding: 0px 50px;
+}
+#about img{
+    margin-top: 100px;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+}
+.abt {
+    vertical-align: top;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.abt h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.abt p{
+    color: rgb(202, 202, 202);
+    min-width: 300px;
+    max-width: 500px;
+}
+#mywork{
+    border: 1px solid white;
+    padding-bottom: 200px;
+}
+#mywork .serv{
+    margin-top: 100px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+#mywork .disc{
+    font-size: 28;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.works div{
+    height: 200px;
+    border-radius: 20px;
+    margin: 0px 50px;
+    border: 1px solid white;
+    vertical-align: top;
+    transition:transform 0.5s, background-color 0.5s ;
+    background: linear-gradient(100deg,#3004f7,#123cf5,#3b06b8);
+}
+.works{
+    display: flex;
+    justify-content: space-evenly;
+}
+.works div:hover{
+    background: transparent;
+    background-color: rgb(38, 186, 212);
+    transform: translateY(-10px);
+}
+.works h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+.works div p{
+    padding: 0px 14px 0px 14px;
+    max-width: 300px;
+    line-height: 20px;
+}
+.atris{
+    display: flex;
+    justify-content: space-evenly;
+}
+.con-par{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+.con-m{
+    margin: 100px 0px;
+}
+.con-inp{
+    margin: 50px 0px;
+    padding: 50px 50px;
+    vertical-align: top;
+}
+.con-m p{
+    font-size: 34px;
+    margin: 30px 24px;
+}
+.con-m a{
+    font-size: 12px;
+    margin: 20px 24px;
+    display: block;
+
+}
+.con-m button{
+    background-color: #d60040;
+    padding: 10px 12px;
+    margin: 20px 24px;
+    border: none;
+    border-radius: 2px;
+}
+.con-inp input{
+    color: rgb(17, 17, 17);
+    padding-left: 14px;
+}
+.con-inp .N-inp{
+    display: block;
+    width: 100%;
+    height: 32px;
+    margin: 20px 0px;
+}
+.con-inp .M-inp{
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 20px 0px;
+}
+@media only screen and (max-width: 750px) {
+    header ul a{
+        display: none;
+    }
+    header ul i{
+        display: block;
+        margin-right: 12px;
+    }
+    .atris{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .works{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #about{
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sec{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .ima{
+        margin-top: 100px;
+        
+    }
+    .ima img{
+        margin-left:20%;
+    }
+    .cont{
+        margin-top: 20px;
+        padding: 0px 20px;
+    }
+    .works div{
+        margin-bottom: 30px;
+    }
+    .con-m{
+        margin-left: 30%;
+    }
+
+}
